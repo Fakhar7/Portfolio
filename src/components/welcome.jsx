@@ -1,7 +1,7 @@
 import Aos from "aos";
 import "aos/dist/aos.css";
 import image from "../assets/profile.png";
-import { Button } from "@mui/material";
+import Button from "./common/button/Button";
 
 const Welcome = () => {
   Aos.init({ duration: 1000 });
@@ -34,11 +34,8 @@ const Welcome = () => {
         my finest works, each one a testament to my ability to craft innovative
         solutions and bring ideas to life.
       </p>
-      <div className="my-7">
-        <Button data-aos="fade-up" color="error" variant="contained">
-          Download Cv
-        </Button>
-      </div>
+
+      <Button name={"Get in touch"} classes={"mt-10"} />
     </div>
   );
 };

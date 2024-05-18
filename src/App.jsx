@@ -1,10 +1,10 @@
 import { useState } from "react";
 import "./App.css";
-import Header from "./components/common/header";
+import Header from "./components/common/header/header";
 import SideBar from "./components/common/sidebar";
 import Welcome from "./components/welcome";
 import Path from "./path";
-import FolloW from "./components/common/follow";
+import Follow from "./components/common/follow/follow";
 
 function App() {
   const [darkMode, setDarkMode] = useState(false);
@@ -37,7 +37,7 @@ function App() {
         <SideBar links={navLinks} isEnabled={sidebar} />
         <Path />
         <Welcome />
-        <FolloW />
+        <Follow className="fixed bottom-5 left-0 right-0 flex justify-center items-end" />
       </div>
     </div>
   );

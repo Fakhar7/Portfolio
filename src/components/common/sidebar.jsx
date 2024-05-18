@@ -1,6 +1,8 @@
 import React from "react";
-import NavLinks from "./navLinks";
+import PropTypes from "prop-types";
+
 import Logo from "./logo";
+import NavLinks from "./navLinks";
 
 const SideBar = ({ links, isEnabled }) => {
   let classes =
@@ -15,6 +17,11 @@ const SideBar = ({ links, isEnabled }) => {
       <NavLinks links={links} isSidebar={true} />
     </div>
   );
+};
+
+SideBar.propTypes = {
+  links: PropTypes.array,
+  isEnabled: PropTypes.bool,
 };
 
 export default SideBar;

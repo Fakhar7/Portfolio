@@ -1,0 +1,28 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+.header {
+    @apply fixed;
+    @apply top-0;
+    @apply left-0;
+    @apply right-0;
+    @apply z-50;
+
+    @apply h-20;
+    @apply flex;
+    @apply items-center;
+    @apply justify-center;
+
+    @apply bg-gray-200;
+}
+
+
+.nav {
+    @apply container;
+    @apply flex;
+    @apply justify-between;
+    @apply items-center;
+    @apply max-md:px-3;
+    @apply max-2xl:px-3;
+}
